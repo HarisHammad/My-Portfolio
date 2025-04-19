@@ -1,7 +1,10 @@
 import React from 'react'
 import Typewriter from 'react-typewriter-effect'
+import GitHubIcon from '@mui/icons-material/GitHub';
+import WhatsAppIcon from '@mui/icons-material/WhatsApp';
+import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from '@mui/material/Button';
-import {NavLink} from 'react-router-dom'
+import {NavLink} from 'react-router-dom';
 
 function Home() {
   return (
@@ -32,17 +35,40 @@ function Home() {
     
     <p style={{fontFamily:"Lexend", fontWeight:"100"}} className='text-[#afb3b3] text-sm mt-7 max-sm:text-xs'>I am a MERN Stack and React Native Developer, currently learning MongoDB, Express.js, React, Node.js, and React Native. Passionate about web and mobile app development, I continuously enhance my skills through real-world projects. My goal is to build efficient, scalable, and user-friendly applications.</p>
 
-    <a
-  href="https://wa.me/923105296649?text=Hi%20I%20saw%20your%20portfolio%2C%20I%20want%20to%20hire%20you!"
+<div className=' mt-4 flex gap-3 '>
+
+<a href="https://github.com/HarisHammad" target="_blank" rel="noopener noreferrer">
+  <div className='w-[32px] h-[32px] bg-transparent text-blue-500 flex justify-center items-center border border-blue-500 rounded-full transition duration-1000 hover:rotate-y-[180deg]'>
+    <GitHubIcon />
+  </div>
+</a>
+
+
+<a href="https://wa.me/923105296649?" target="_blank" rel="noopener noreferrer">
+  <div className='w-[32px] h-[32px] bg-transparent text-blue-500 flex justify-center items-center border border-blue-500 rounded-full transition duration-1000 hover:rotate-y-[180deg]'>
+    <WhatsAppIcon />
+  </div>
+</a>
+
+ <a href="https://www.linkedin.com/in/haris-hammad-9401b8311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
+    <div className='w-[32px] h-[32px] bg-transparent text-blue-500 flex justify-center items-center border border-blue-500 rounded-full transition duration-1000 hover:rotate-y-[180deg]'>
+      <LinkedInIcon />
+    </div>
+  </a>
+
+</div>
+
+<a
+  href="https://wa.me/923105296649?text=Hi%20I%20saw%20your%20portfolio%2C%20I'm%20interested%20in%20offering%20you%20an%20internship!"
   target="_blank"
   rel="noopener noreferrer"
 >
   <Button
-    style={{ marginTop: '30px', borderRadius: '10px' }}
+    style={{ marginTop: '25px', borderRadius: '10px' }}
     className="w-40 rounded-[70px]"
     variant="outlined"
   >
-    Hire Me
+    Open to Intern
   </Button>
 </a>
 
@@ -60,7 +86,7 @@ function Home() {
   {/* <div className="absolute inset-0 bg-black/0 z-0"></div> */}
   <img
   className=" rounded-[20px] overflow-hidden w-full h-full mix-blend-soft-light opacity-100 brightness-110 contrast-110 saturate-150 transition-all duration-500 max-sm:mix-blend-normal hover:mix-blend-normal hover:translate-y-2"
-  src="/WhatsApp Image 2025-04-05 at 3.01.46 AM (4) (2).jpg"
+  src="/picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"
   alt=""
 />
 
