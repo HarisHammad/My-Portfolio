@@ -1,10 +1,15 @@
-body{
+.body2{
+    margin-top: -90px;
     background-image: url('/1.gif');
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center ;
+    height: 100%;
 /* color: #afb3b3 */
 }
+
+
+   
 @import "tailwindcss";
 
 

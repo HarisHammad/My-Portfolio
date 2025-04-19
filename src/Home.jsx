@@ -6,9 +6,10 @@ import {NavLink} from 'react-router-dom'
 function Home() {
   return (
     <>
+    <div className='body2 '>
     <div  className=' w-full flex flex-wrap justify-center gap-20 '>
         
-      <div className=' w-[755px]  ml-[-35px] mt-32 max-sm:mt-26 max-lg:pl-14 pr-4 '>
+      <div className=' w-[755px]  ml-[-35px] mt-58 max-sm:mt-50 max-lg:pl-14 max-lg:mt-50 pr-4 '>
         <h1 style={{fontFamily:"Lexend", fontWeight:"600"}} className='text-white text-4xl max-sm:text-3xl'>Hi, I'm <span className='text-blue-500'> Haris</span> </h1>
         <div className="text-white text-2xl max-sm:text-xl font-semibold font-[Lexend]">
       {/* <span>I'm a&nbsp;</span> */}
@@ -52,14 +53,14 @@ function Home() {
 
       <div
   // style={{ backgroundImage: "url('/WhatsApp Image 2025-04-05 at 3.01.46 AM (4).jpeg')" }}
-  className="relative  bg-cover bg-center w-[287px] h-[380px] text-white mt-20 max-lg:mt-2 border-[#242323] mx-4 border-2 rounded-[18px] hover:border-transparent hover:opacity-90 transition-all duration-300"
+  className="relative mb-15 overflow-hidden bg-cover bg-center w-[287px] h-[380px] max-sm:w-[207px] max-sm:h-[280px]  text-white mt-42 max-lg:mt-[-35px] border-[#242323] mx-4 border-2 rounded-[18px] hover:border-transparent hover:opacity-90 transition-all duration-300"
 
 >
   {/* Overlay */}
-  <div className="absolute inset-0 bg-black/60 z-0"></div>
+  {/* <div className="absolute inset-0 bg-black/0 z-0"></div> */}
   <img
-  className=" rounded-[20px] w-full h-full mix-blend-soft-light opacity-100 brightness-110 contrast-110 saturate-150 transition-all duration-500 hover:mix-blend-normal hover:translate-y-2"
-  src="\picture-profile-icon-male-icon-human-or-people-sign-and-symbol-free-vector.jpg"
+  className=" rounded-[20px] overflow-hidden w-full h-full mix-blend-soft-light opacity-100 brightness-110 contrast-110 saturate-150 transition-all duration-500 max-sm:mix-blend-normal hover:mix-blend-normal hover:translate-y-2"
+  src="/WhatsApp Image 2025-04-05 at 3.01.46 AM (4) (2).jpg"
   alt=""
 />
 
@@ -68,6 +69,7 @@ function Home() {
 </div>
 
   
+        </div>
         </div>
     </>
   )
