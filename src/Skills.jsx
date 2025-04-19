@@ -14,7 +14,7 @@ function Skills() {
   </p>
 </div>
 
-<div className=' flex flex-wrap w-[415px] mt-28 max-lg:mt-0 gap-4  justify-center max-lg:gap-3 '>
+<div className=' flex flex-wrap w-[415px] mt-28 max-lg:mt-0 gap-4  justify-center max-lg:gap-3 border-1 border-blue-500'>
 <div className='experience-box border-1 border-blue-500 p-4 w-[90px] h-[90px] max-sm:w-[65px] max-sm:h-[65px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
   <p><FaHtml5 title="HTML5" className="text-orange-600 text-[50px] max-sm:text-[35px]" /></p>  
     <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-white text-sm max-sm:text-[11px]'>HTML</p>
@@ -35,37 +35,37 @@ function Skills() {
     <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-white text-[13px] max-sm:text-[11px]'>TypeScript</p>
     </div>
 
-<div className='experience-box border-1 border-blue-500 ml-13 p-2 w-[90px] h-[90px] max-sm:w-[70px] max-sm:h-[70px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
+<div className='experience-box border-1 border-blue-500 ml-13 p-2 w-[90px] h-[90px] max-sm:w-[65px] max-sm:h-[65px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
   <p><FaReact title="HTML5" className="text-blue-600 text-[50px] max-sm:text-[35px]" /></p>  
     <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-white text-[12px] max-sm:text-[11px]'>React js</p>
     </div>
 
-<div className=' border-1 border-blue-500 p-1 w-[90px] h-[90px] max-sm:w-[70px] max-sm:h-[70px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
+<div className=' border-1 border-blue-500 p-1 w-[90px] h-[90px] max-sm:w-[65px] max-sm:h-[65px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
   <p><FaReact title="HTML5" className="text-blue-600 text-[50px] max-sm:text-[35px]" /></p>  
     <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-white text-[11px] max-sm:text-[9px]'>React Native</p>
     </div>
 
-<div className='experience-box3 border-1 border-blue-500 mr-13  p-2 w-[90px] h-[90px] max-sm:w-[70px] max-sm:h-[70px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
+<div className='experience-box3 border-1 border-blue-500 mr-13  p-2 w-[90px] h-[90px] max-sm:w-[65px] max-sm:h-[65px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
   <p><FaNodeJs title="HTML5" className="text-green-600 text-[50px] max-sm:text-[35px]" /></p>  
     <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-white text-[13px] max-sm:text-[11px]'>Node js </p>
     </div>
 
-<div className='experience-box border-1 border-blue-500 p-1 w-[90px] h-[90px] max-sm:w-[70px] max-sm:h-[70px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
+<div className='experience-box border-1 border-blue-500 p-1 w-[90px] h-[90px] max-sm:w-[65px] max-sm:h-[65px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
   <p><SiExpress title="HTML5" className="text-gray-400 text-[50px] max-sm:text-[35px]" /></p>  
     <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-white text-[13px] max-sm:text-[11px]'>Express js </p>
     </div>
 
-<div className='experience-box4 border-1 border-blue-500 p-2 w-[90px] h-[90px] max-sm:w-[70px] max-sm:h-[70px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
+<div className='experience-box4 border-1 border-blue-500 p-2 w-[90px] h-[90px] max-sm:w-[65px] max-sm:h-[65px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
   <p><SiMongodb title="HTML5" className="text-green-700 text-[50px] max-sm:text-[35px]" /></p>  
     <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-white text-[13px] max-sm:text-[11px]'>Mongodb </p>
     </div>
 
-<div className='experience-box4 border-1 border-blue-500 p-2 w-[90px] h-[90px] max-sm:w-[70px] max-sm:h-[70px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
+<div className='experience-box4 border-1 border-blue-500 p-2 w-[90px] h-[90px] max-sm:w-[65px] max-sm:h-[65px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
   <p><SiTailwindcss title="HTML5" className="text-blue-600 text-[50px] max-sm:text-[35px]" /></p>  
     <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-white text-[13px] max-sm:text-[11px]'>Tailwind </p>
     </div>
 
-<div className='experience-box3 border-1 border-blue-500 p-2 w-[90px] h-[90px] max-sm:w-[70px] max-sm:h-[70px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
+<div className='experience-box3 border-1 border-blue-500 p-2 w-[90px] h-[90px] max-sm:w-[65px] max-sm:h-[65px]  rounded-[10px]  flex flex-col justify-center items-center hover:bg-[rgba(0,123,255,0.08)] hover:scale-[1.1] transition duration-500' >
   <p><SiGithub title="HTML5" className="text-white text-[50px] max-sm:text-[35px]" /></p>  
     <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-white mt-1 text-[13px] max-sm:text-[11px]'>Github </p>
     </div>
