@@ -1,3 +1,6 @@
+body{
+    background-color: black
+}
 .body2{
     margin-top: -90px;
     background-image: url('/1.gif');
@@ -7,6 +10,35 @@
     height: 100%;
 /* color: #afb3b3 */
 }
+
+.experience-box {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 0.8s ease-out forwards;
+  }
+.experience-box3 {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideIn 0.8s ease-out forwards;
+  }
+.experience-box2 {
+    opacity: 0;
+    transform: translatey(100px);
+    animation: slideIn 0.8s ease-out forwards;
+  }
+.experience-box4 {
+    opacity: 0;
+    transform: translatey(-100px);
+    animation: slideIn 0.8s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
 
 
    

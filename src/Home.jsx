@@ -79,7 +79,7 @@ function Home() {
 
       <div
   // style={{ backgroundImage: "url('/WhatsApp Image 2025-04-05 at 3.01.46 AM (4).jpeg')" }}
-  className="relative mb-15 overflow-hidden bg-cover bg-center w-[287px] h-[380px] max-sm:w-[207px] max-sm:h-[280px]  text-white mt-42 max-lg:mt-[-35px] border-[#242323] mx-4 border-2 rounded-[18px] hover:border-transparent hover:opacity-90 transition-all duration-300"
+  className="relative mb-[59px] overflow-hidden bg-cover bg-center w-[287px] h-[380px] max-sm:w-[207px] max-sm:h-[280px]  text-white mt-42 max-lg:mt-[-35px] border-[#242323] mx-4 border-2 rounded-[18px] hover:border-transparent hover:opacity-90 transition-all duration-300"
 
 >
   {/* Overlay */}

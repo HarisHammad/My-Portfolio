@@ -5,12 +5,13 @@ import CloseIcon from '@mui/icons-material/Close';
 import AssignmentIcon from '@mui/icons-material/Assignment'
 import HomeIcon from '@mui/icons-material/Home';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
+import { MdEngineering } from 'react-icons/md';
 
 
 function Nav() {
   const [open, setOpen] = useState(false);
   return (
-    <div className='w-[75%] max-sm:w-[90%] bg-[rgba(255,255,255,0.07)] text-white z-10 relative mx-auto mt-[20px] rounded-[15px] '>
+    <div className='w-[75%] max-lg:w-[90%]  bg-[rgba(255,255,255,0.07)] text-white z-10 relative mx-auto mt-[20px] rounded-[15px] '>
       <nav className='flex justify-between p-4  px-12 items-center max-sm:p-2'>
       <h1 style={{ fontFamily: 'Lexend' }} className="relative group text-blue-500 text-[1.6rem] inline-block cursor-pointer">
   <span className="relative z-10 px-2 py-1">Haris</span>
@@ -43,6 +44,25 @@ function Nav() {
   `}
 >
   Home
+</NavLink>
+
+      <NavLink
+  to="/skills"
+  className={({ isActive }) => `
+    relative 
+    pb-1
+    before:content-[''] 
+    before:absolute 
+    before:bottom-[0px] 
+    before:left-0 
+    before:h-[2px] 
+    before:bg-blue-500
+    before:transition-all 
+    before:duration-500 
+    ${isActive ? 'before:w-0 hover:before:w-full text-blue-500' : 'before:w-0 hover:before:w-full'}
+  `}
+>
+  Skills
 </NavLink>
 
 
@@ -90,9 +110,10 @@ function Nav() {
       }`}>
         <ul className='p-5  flex flex-col gap-4 text-[1.2rem] text-center text-[17px]' style={{ fontFamily: 'Lexend' }}>
           <p onClick={()=>setOpen(false)} className='cursor-pointer ml-[70%]'><CloseIcon/></p>
-          <NavLink to='/' onClick={() => setOpen(false)} className={({ isActive }) =>`text-[16px] p-1.5 rounded-[7px]  bg-[rgba(255,255,255,0.1)] ${isActive ? 'text-blue-700' : ''}`}> <HomeIcon/>   </NavLink>
-          <NavLink to='/project' onClick={() => setOpen(false)} className={({ isActive })=>`text-[16px] p-1.5 mt-[-9px] rounded-[7px]  bg-[rgba(255,255,255,0.1)] ${ isActive ? 'text-blue-700' : ''}`}><AssignmentIcon/></NavLink>
-          <NavLink to='/contact' onClick={() => setOpen(false)} className={({ isActive }) =>`text-[16px] p-1.5 mt-[-9px] rounded-[7px]  bg-[rgba(255,255,255,0.1)] ${isActive ? 'text-blue-700' : ''}`}> <AddIcCallIcon/></NavLink>
+          <NavLink to='/' onClick={() => setOpen(false)} className={({ isActive }) =>`text-[16px] p-1.5 rounded-[7px]  bg-[rgba(255,255,255,0.1)] ${isActive ? 'text-blue-700' : ''}`}> <HomeIcon/><br /><p className='text-[9px]'>Home</p>   </NavLink>
+          <NavLink to="/skills" onClick={() => setOpen(false)} className={({ isActive }) => `text-[16px] p-1.5 mt-[-7px] rounded-[7px] bg-[rgba(255,255,255,0.1)] flex flex-col items-center justify-center`}>{({ isActive }) => (<> <MdEngineering className={`text-3xl ml-1.5 ${  isActive ? 'text-blue-700' : 'text-white' }`}/> <p className={`text-[9px] ${isActive ? 'text-blue-700' : 'text-white'}`}> Skills </p></>)}</NavLink>
+          <NavLink to='/project' onClick={() => setOpen(false)} className={({ isActive })=>`text-[16px] p-1.5 mt-[-9px] rounded-[7px]  bg-[rgba(255,255,255,0.1)] ${ isActive ? 'text-blue-700' : ''}`}><AssignmentIcon/><br /><p className='text-[9px]'>Project</p></NavLink>
+          <NavLink to='/contact' onClick={() => setOpen(false)} className={({ isActive }) =>`text-[16px] p-1.5 mt-[-9px] rounded-[7px]  bg-[rgba(255,255,255,0.1)] ${isActive ? 'text-blue-700' : ''}`}> <AddIcCallIcon/><br /><p className='text-[9px]'>Contact</p></NavLink>
         </ul>
       </div>
     </div>
