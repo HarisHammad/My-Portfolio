@@ -21,7 +21,7 @@ function Home() {
           startDelay={100}
           cursorColor="blue"
           multiText={[
-            'Web Developer', 
+            'Web Developer',
             'App Developer',
             'MERN Stack Developer',
             'React Native Developer',
