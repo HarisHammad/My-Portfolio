@@ -39,20 +39,20 @@ function Home() {
 
 <a href="https://github.com/HarisHammad" target="_blank" rel="noopener noreferrer">
   <div className='w-[32px] h-[32px] bg-transparent text-blue-500 flex justify-center items-center border border-blue-500 rounded-full transition duration-1000 hover:rotate-y-[180deg]'>
-    <GitHubIcon />
+    <GitHubIcon style={{fontSize:'20px'}} />
   </div>
 </a>
 
 
 <a href="https://wa.me/923105296649?" target="_blank" rel="noopener noreferrer">
   <div className='w-[32px] h-[32px] bg-transparent text-blue-500 flex justify-center items-center border border-blue-500 rounded-full transition duration-1000 hover:rotate-y-[180deg]'>
-    <WhatsAppIcon />
+    <WhatsAppIcon style={{fontSize:'20px'}} />
   </div>
 </a>
 
  <a href="https://www.linkedin.com/in/haris-hammad-9401b8311?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" rel="noopener noreferrer">
     <div className='w-[32px] h-[32px] bg-transparent text-blue-500 flex justify-center items-center border border-blue-500 rounded-full transition duration-1000 hover:rotate-y-[180deg]'>
-      <LinkedInIcon />
+      <LinkedInIcon style={{fontSize:'20px'}} />
     </div>
   </a>
 
