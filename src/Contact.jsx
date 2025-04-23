@@ -70,7 +70,7 @@ function Contact() {
 </a>
       </div>
 
-      <div className= "w-[600px] mt-10 max-lg:mt-0  max-lg:ml-[20%] max-sm:ml-[1%]  p-2  max-lg:w-[100%] ">
+      <div className= "w-[600px] mt-10 max-lg:mt-0  max-lg:ml-[20%] max-sm:ml-[1%]  p-2 max-sm:px-3  max-lg:w-[100%] ">
         
      <form onSubmit={handleSubmit} >
       <input type="text" 
@@ -79,7 +79,7 @@ function Contact() {
       onChange={handleChange}
       value={data.name}
       placeholder='Enter Your Name' 
-      className="w-[90%] max-lg:w-[75%]  max-sm:w-[100%] bg-[#1e1f1f] h-[40px] text-white p-3 border border-blue-500 focus:outline-none focus:ring-1 border-none focus:ring-blue-500 rounded-[4px] text-[14px]" />
+      className="w-[90%] max-lg:w-[75%]  max-sm:w-[100%] bg-[#2c2c2c] h-[40px] text-white p-3 border border-blue-500 focus:outline-none focus:ring-1 border-none focus:ring-blue-500 rounded-[4px] text-[14px]" />
 
 
       <input type="Email" 
@@ -88,7 +88,7 @@ function Contact() {
       onChange={handleChange}
       value={data.email}
       placeholder='Enter Your Email ' 
-      className="w-[90%] max-lg:w-[75%] max-sm:w-[100%] mt-4 bg-[#1e1f1f] h-[40px] text-white p-3 border border-blue-500 focus:outline-none focus:ring-1 border-none focus:ring-blue-500 rounded-[4px] text-[14px]" />
+      className="w-[90%] max-lg:w-[75%] max-sm:w-[100%] mt-4 bg-[#2c2c2c] h-[40px] text-white p-3 border border-blue-500 focus:outline-none focus:ring-1 border-none focus:ring-blue-500 rounded-[4px] text-[14px]" />
 
 
 
@@ -98,7 +98,7 @@ function Contact() {
       onChange={handleChange}
       value={data.message}
       placeholder='Your Message' 
-      className="w-[90%] max-lg:w-[75%] max-sm:w-[100%] mt-4 bg-[#1e1f1f] h-[160px] text-white pl-3 pt-2 border border-blue-500 focus:outline-none focus:ring-1 border-none focus:ring-blue-500 rounded-[4px] text-[14px]" /> <br />
+      className="w-[90%] max-lg:w-[75%] max-sm:w-[100%] mt-4 bg-[#2c2c2c] h-[160px] text-white pl-3 pt-2 border border-blue-500 focus:outline-none focus:ring-1 border-none focus:ring-blue-500 rounded-[4px] text-[14px]" /> <br />
       <Button
       type="submit"
     style={{ marginTop: '15px', borderRadius: '6px' }}
