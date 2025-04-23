@@ -1,0 +1,59 @@
+body{
+    background-color: black
+}
+.body2{
+    margin-top: -90px;
+    background-image: url('/1.gif');
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position:center ;
+    height: 100%;
+/* color: #afb3b3 */
+}
+
+.experience-box {
+    opacity: 0;
+    transform: translateX(-100px);
+    animation: slideIn 1.2s ease-out forwards;
+  }
+.experience-box3 {
+    opacity: 0;
+    transform: translateX(100px);
+    animation: slideIn 1.2s ease-out forwards;
+  }
+.experience-box2 {
+    opacity: 0;
+    transform: translatey(100px);
+    animation: slideIn 1.2s ease-out forwards;
+  }
+.experience-box4 {
+    opacity: 0;
+    transform: translatey(-100px);
+    animation: slideIn 1.2s ease-out forwards;
+  }
+  
+  @keyframes slideIn {
+    to {
+      opacity: 1;
+      transform: translateX(0);
+    }
+  }
+  
+
+
+   
+@import "tailwindcss";
+
+
+
+.hide-scrollbar {
+  overflow-x: auto;
+  scrollbar-width: none; /* Firefox ke liye */
+  -ms-overflow-style: none; /* Internet Explorer/Edge ke liye */
+}
+
+.hide-scrollbar::-webkit-scrollbar {
+  display: none; /* Chrome, Safari, Opera ke liye */
+}
+
+
