@@ -26,7 +26,7 @@ function Contact() {
   }
   return (
     <>
-    <h1 style={{ fontFamily: "Lexend", fontWeight: "500" }} className='mt-5 text-blue-500 text-4xl max-sm:text-3xl text-center'>Contact ME</h1>
+    <h1 style={{ fontFamily: "Lexend", fontWeight: "500" }} className='mt-5 text-blue-500 text-4xl max-sm:text-3xl text-center'>Contact Me</h1>
     <div className='w-full flex  flex-wrap justify-center mt-5'>
 
 
@@ -61,11 +61,11 @@ function Contact() {
   rel="noopener noreferrer"
 >
   <Button
-    style={{ marginTop: '30px', borderRadius: '10px' }}
-    className="w-37 rounded-[70px]"
+    style={{ marginTop: '30px', borderRadius: '10px',fontSize:"12px" }}
+    className="w-37 h-10 rounded-[70px]"
     variant="outlined"
   >
-    Open to Intern
+    Hire Me as Intern
   </Button>
 </a>
       </div>

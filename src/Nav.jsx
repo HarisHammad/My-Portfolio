@@ -6,12 +6,19 @@ import AssignmentIcon from '@mui/icons-material/Assignment'
 import HomeIcon from '@mui/icons-material/Home';
 import AddIcCallIcon from '@mui/icons-material/AddIcCall';
 import { MdEngineering } from 'react-icons/md';
+import { HashLink } from 'react-router-hash-link';
+import { useLocation } from 'react-router-dom';
+
 
 
 function Nav() {
   const [open, setOpen] = useState(false);
+   const location = useLocation();
+
+  const isActive = location.hash === '#skill';
+  const isActive2 = location.hash === '#home';
   return (
-    <div className='w-[75%] max-lg:w-[90%]  bg-[rgba(255,255,255,0.07)] text-white z-10 relative mx-auto mt-[20px] rounded-[15px] '>
+    <div className='w-[75%] max-lg:w-[90%]  bg-[rgba(255,255,255,0.2)] text-white  mx-auto mt-[20px] rounded-[15px] fixed top-0 left-0 right-0 z-50'>
       <nav className='flex justify-between p-4  px-12 items-center max-sm:p-2'>
       <h1 style={{ fontFamily: 'Lexend' }} className="relative group text-blue-500 text-[1.6rem] inline-block cursor-pointer">
   <span className="relative z-10 px-2 py-1">Haris</span>
@@ -27,7 +34,7 @@ function Nav() {
 </h1>
       <ul style={{fontFamily:'Lexend'}} className='display flex gap-8 pr-4 max-sm:hidden mt-[5px]'>
 
-      <NavLink
+      {/* <NavLink
   to="/"
   className={({ isActive }) => `
     relative 
@@ -44,26 +51,41 @@ function Nav() {
   `}
 >
   Home
-</NavLink>
+</NavLink> */}
 
-      <NavLink
-  to="/skills"
-  className={({ isActive }) => `
-    relative 
-    pb-1
-    before:content-[''] 
-    before:absolute 
-    before:bottom-[0px] 
-    before:left-0 
-    before:h-[2px] 
-    before:bg-blue-500
-    before:transition-all 
-    before:duration-500 
-    ${isActive ? 'before:w-0 hover:before:w-full text-blue-500' : 'before:w-0 hover:before:w-full'}
-  `}
->
-  Skills
-</NavLink>
+
+
+ <HashLink
+        smooth
+        to="/#home"
+        className={`
+          relative pb-1 
+          before:content-[''] before:absolute before:bottom-[0px] before:left-0 
+          before:h-[2px] before:bg-blue-500 before:transition-all before:duration-500 
+          before:w-0 hover:before:w-full
+          ${isActive2 ? 'text-blue-500' : ''}
+        `}
+      >
+        Home
+      </HashLink>
+
+
+
+ <HashLink
+        smooth
+        to="/#skill"
+        className={`
+          relative pb-1 
+          before:content-[''] before:absolute before:bottom-[0px] before:left-0 
+          before:h-[2px] before:bg-blue-500 before:transition-all before:duration-500 
+          before:w-0 hover:before:w-full
+          ${isActive ? 'text-blue-500' : ''}
+        `}
+      >
+        Skills
+      </HashLink>
+
+
 
 
         <NavLink to={'/project'} className={({ isActive }) => `

@@ -4,12 +4,24 @@ import GitHubIcon from '@mui/icons-material/GitHub';
 import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from '@mui/material/Button';
+import Skills from './Skills';
+import Project from './Project';
+import Contact from './Contact';
 import {NavLink} from 'react-router-dom';
 
+import { useInView } from 'react-intersection-observer';
+import { motion } from 'framer-motion';
+
 function Home() {
+  const { ref: skillsRef, inView: skillsVisible } = useInView({
+    triggerOnce: true, // Sirf aik baar trigger ho
+    threshold: 0.7,    // 20% visible hote hi trigger
+  });
+  console.log('Skills visible:', skillsVisible);
+
   return (
     <>
-    <div className='body2 '>
+    <div id='home' className='body2 '>
     <div  className=' w-full flex flex-wrap justify-center gap-20 '>
         
       <div className='experience-box w-[755px]  ml-[-35px] mt-58 max-sm:mt-40 max-lg:pl-14 max-lg:mt-40 pr-4 '>
@@ -63,12 +75,12 @@ function Home() {
   target="_blank"
   rel="noopener noreferrer"
 >
-  <Button
-    style={{ marginTop: '15px', borderRadius: '10px' }}
-    className="w-40 rounded-[70px]"
+<Button
+    style={{ marginTop: '30px', borderRadius: '10px',fontSize:"13px" }}
+    className="w-40 h-10 rounded-[70px]"
     variant="outlined"
   >
-    Open to Intern
+    Hire Me as Intern
   </Button>
 </a>
 
@@ -97,6 +109,25 @@ function Home() {
   
         </div>
         </div>
+
+
+
+      <div id='skill' ref={skillsRef} style={{ minHeight: '80vh' }}>
+  {skillsVisible && (
+    <motion.div
+      initial={{ opacity: 0, y: 50 }}
+      animate={{ opacity: 1, y: 0 }}
+       transition={{ duration: 1 }}
+    >
+      <Skills />
+    </motion.div>
+  )}
+</div>
+<Project/>
+<Contact/>
+
+
+
     </>
   )
 }

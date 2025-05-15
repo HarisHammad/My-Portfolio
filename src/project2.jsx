@@ -2,14 +2,28 @@ import React from 'react'
 import { useRef } from 'react';
 import NavigateNextIcon from '@mui/icons-material/NavigateNext';
 import NavigateBeforeIcon from '@mui/icons-material/NavigateBefore';
-import Button from '@mui/material/Button'
-import { NavLink } from 'react-router-dom';
 
-function project() {
+function project2() {
   const scrollRef = useRef(null);
   const scrollRef1 = useRef(null);
 
 
+  const handleScroll = () => {
+    const scrollAmount = window.innerWidth * 0.45 ; // 20vw
+    scrollRef.current.scrollBy({
+      left: -scrollAmount,
+      behavior: "smooth",
+    });
+  };
+  
+
+  const handlenext = () => {
+    const scrollAmount = window.innerWidth * 0.45; // 20vw
+  scrollRef.current.scrollBy({
+    left: scrollAmount,
+    behavior: "smooth",
+  });
+  }
 
 
 
@@ -31,17 +45,16 @@ function project() {
   }
 
   return (
-    <div className='lg:mt-[-5px] w-full mt-15 max-sm:mt-10 flex justify-center flex-col items-center overflow-x-hidden'>
+    <div className='w-full mt-15 max-sm:mt-10 flex justify-center flex-col items-center overflow-x-hidden'>
 
 
-<div className='w-full max-md:flex max-md:justify-around max-md:items-center text-center my-3 ' >
-<h1 style={{ fontFamily: "Roboto", fontWeight: "500" }} className='text-blue-500 text-[42px] max-sm:text-2xl '>Projects</h1>
+<div className='w-full flex justify-around items-center my-3 lg:hidden' >
+<h1 style={{ fontFamily: "Roboto", fontWeight: "500" }} className='text-blue-500 text-3xl max-sm:text-2xl'>Projects</h1>
 <div className='flex gap-3'>
-<div onClick={handleScroll1} className='md:hidden max-sm:w-[25px] max-sm:h-[25px] flex justify-center items-center rounded-[30px] bg-white'><NavigateBeforeIcon style={{fontSize:"35px",}}/></div>
-<div onClick={handlenext1} className='md:hidden max-sm:w-[25px] max-sm:h-[25px] flex justify-center items-center rounded-[30px] bg-white '><NavigateNextIcon style={{fontSize:"35px",}}/></div></div>
+<div onClick={handleScroll1} className=' w-[25px] h-[25px] flex justify-center items-center rounded-[30px] bg-white'><NavigateBeforeIcon style={{fontSize:"35px",}}/></div>
+<div onClick={handlenext1} className=' w-[25px] h-[25px] flex justify-center items-center rounded-[30px] bg-white '><NavigateNextIcon style={{fontSize:"35px",}}/></div></div>
 </div>
-
-       <div className='w-full flex justify-center lg:mt-5 md:mt-5 ' >
+       <div className='w-full flex justify-center  ' >
       <div ref={scrollRef1} className='py-2 w-[78%]  flex  gap-12 max-sm:gap-3 items-center  px-9 ml-30 max-lg:ml-0   overflow-x-auto scroll-smooth max-sm:px-1 max-sm:w-[84%] hide-scrollbar' >
 
       <a href="https://car-sell-delta.vercel.app/" target="_blank" rel="noopener noreferrer">
@@ -92,8 +105,37 @@ function project() {
       </a>
 
 
-       <a href="https://cake-amber.vercel.app/" target="_blank" rel="noopener noreferrer">
-      <div className='md:hidden hover:bg-[rgba(255,215,0,0.1)] w-[255px]  h-[340px] max-sm:w-[140px] max-sm:h-[190px]   border-1 border-[#FFD700]  flex flex-col p-1 max-sm:p-1  rounded-[15px] hover:scale-[1.02] transition duration-500' >
+      
+    
+    
+
+</div>
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+<div className='w-full flex justify-around items-center my-3 lg:hidden mt-10' >
+<h1 style={{ fontFamily: "Roboto", fontWeight: "500" }} className='text-black text-3xl max-sm:text-xl'>Explore More</h1>
+<div className='flex gap-3'>
+<div onClick={handleScroll} className=' w-[25px] h-[25px] flex justify-center items-center rounded-[30px] bg-white'><NavigateBeforeIcon style={{fontSize:"35px",}}/></div>
+<div onClick={handlenext} className=' w-[25px] h-[25px] flex justify-center items-center rounded-[30px] bg-white '><NavigateNextIcon style={{fontSize:"35px",}}/></div></div>
+</div>
+       <div className='w-full flex justify-center mt-7 max-sm:mt-0 ' >
+      <div ref={scrollRef} className='py-2 w-[78%] flex  gap-12 max-sm:gap-3 items-center  px-9 ml-30 max-lg:ml-0   overflow-x-auto scroll-smooth max-sm:px-1 max-sm:w-[84%] hide-scrollbar' >
+
+
+      <a href="https://cake-amber.vercel.app/" target="_blank" rel="noopener noreferrer">
+      <div className=' hover:bg-[rgba(255,215,0,0.1)] w-[255px]  h-[340px] max-sm:w-[140px] max-sm:h-[190px]   border-1 border-[#FFD700]  flex flex-col p-1 max-sm:p-1  rounded-[15px] hover:scale-[1.02] transition duration-500' >
       <div className="bg-[url('/items3.jpg.webp')] bg-cover bg-center w-[245px] h-[230px] max-sm:w-[130px] max-sm:h-[150px] rounded-[10px] flex flex-col justify-center text-center"></div>
       <div className='flex flex-wrap p-1 max-sm:p-0   gap-2 max-sm:gap-1'>
       <div className='w-[40px]  h-[18px] max-sm:w-[28px] max-sm:h-[13px] rounded-[5px] hover:bg-[rgba(255,165,0,0.1)] text-blue-700 bg-transpernt border-1 border-blue-700 mt-1 text-[9px] max-sm:text-[7px] flex justify-center items-center '>React </div>
@@ -107,7 +149,7 @@ function project() {
       </a>
 
       <a href="https://mini-weather-nu.vercel.app/" target="_blank" rel="noopener noreferrer">
-      <div className='md:hidden hover:bg-[rgba(255,255,255,0.12)] w-[255px]  h-[340px] max-sm:w-[140px] max-sm:h-[190px]   border-1 border-white  flex flex-col p-1 max-sm:p-1  rounded-[15px] hover:scale-[1.02] transition duration-500' >
+      <div className=' hover:bg-[rgba(255,255,255,0.12)] w-[255px]  h-[340px] max-sm:w-[140px] max-sm:h-[190px]   border-1 border-white  flex flex-col p-1 max-sm:p-1  rounded-[15px] hover:scale-[1.02] transition duration-500' >
       <div className="bg-[url('/download.png')] bg-cover bg-center w-[245px] h-[230px] max-sm:w-[130px] max-sm:h-[150px] rounded-[10px] flex flex-col justify-center text-center"></div>
       <div className='flex flex-wrap p-1  max-sm:p-0  gap-2 max-sm:gap-1 '>
       <div className='w-[40px]  h-[18px] max-sm:w-[28px] max-sm:h-[13px] rounded-[5px] hover:bg-[rgba(255,165,0,0.1)] text-blue-700 bg-transpernt border-1 border-blue-700 mt-1 text-[9px] max-sm:text-[7px] flex justify-center items-center '>React </div>
@@ -120,31 +162,14 @@ function project() {
       </a>
 
 
-
-      
-    
-    
-
 </div>
 </div>
-<NavLink to={"/project2"}>
-<Button
-  style={{
-    marginTop: '30px',
-    borderRadius: '10px',
-    fontSize: '13px',
-    borderColor: '#CC6600',
-    color: '#CC6600'
-  }}
-  variant="outlined"
-  className="w-40 h-10"
->
-  See More
-</Button>
 
-  </NavLink>
+
+
+
     </div>
   )
 }
 
-export default project
+export default project2

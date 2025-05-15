@@ -6,7 +6,7 @@ import { SiMongodb, SiExpress, SiTailwindcss, SiRedux, SiGithub, SiVite } from "
 
 function Skills() {
   return (
-    <div className='w-full flex justify-center flex-wrap gap-20 max-lg:gap-y-6 overflow-x-hidden'>
+    <div className='mt-[-70px] w-full flex justify-center flex-wrap gap-20 max-lg:gap-y-6 overflow-x-hidden'>
 <div className='  p-4 w-[400px] mt-42 max-lg:mt-6 max-lg:w-[550px] max-sm:mt-15'>
   <h1 style={{ fontFamily: "Lexend", fontWeight: "500" }} className='text-blue-500 text-3xl max-sm:text-3xl'>Experience</h1>
   <p style={{ fontFamily: "Lexend", fontWeight: "100" }} className='text-[#afb3b3] text-sm mt-7 max-sm:text-xs max-lg:mt-2'>

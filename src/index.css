@@ -2,14 +2,18 @@ body{
     background-color: black
 }
 .body2{
-    margin-top: -90px;
-    background-image: url('/1.gif');
+    /* margin-top: 0px; */
+    /* background-image: url('/1.gif'); */
     background-size: cover;
     background-repeat: no-repeat;
     background-position:center ;
     height: 100%;
 color: #2c2c2c
 }
+html {
+  scroll-behavior: smooth;
+}
+
 
 .experience-box {
     opacity: 0;
