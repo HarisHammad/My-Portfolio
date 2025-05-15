@@ -5,7 +5,7 @@ import WhatsAppIcon from '@mui/icons-material/WhatsApp';
 import LinkedInIcon from '@mui/icons-material/LinkedIn';
 import Button from '@mui/material/Button';
 import Skills from './Skills';
-import Project from './Project';
+import Project from './project';
 import Contact from './Contact';
 import {NavLink} from 'react-router-dom';
 

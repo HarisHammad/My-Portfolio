@@ -2,8 +2,8 @@ import { Route ,Routes,BrowserRouter } from "react-router-dom"
 import Home from "./Home"
 import Contact from "./Contact"
 import Nav from "./Nav"
-import Project from "./Project"
-import Project2 from "./Project2"
+import Project from "./project"
+import Project2 from "./project2"
 import Skills from "./Skills"
 function App() {
   return (
